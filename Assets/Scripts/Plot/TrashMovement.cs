@@ -9,10 +9,7 @@ public class TrashMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!FindObjectOfType<Plot>().plotStarted)
-        {
-            rigidbody.velocity = new Vector2(0, -speed);
-        }
+        rigidbody.velocity = new Vector2(0, -speed);
         if (transform.position.y < -12f)
         {
             Destroy(gameObject);

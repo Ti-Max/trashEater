@@ -1,10 +1,10 @@
 Using pre-set license
-Built from '2020.3/staging' branch; Version is '2020.3.21f1 (a38c86f6690f) revision 10718342'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro Education; OS build 19043.1288; Version 2009; 64bit' Language: 'ru' Physical Memory: 7930 MB
+Built from '2020.3/staging' branch; Version is '2020.3.9f1 (108be757e447) revision 1084391'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 22000.258; Version 2009; 64bit' Language: 'ru' Physical Memory: 16249 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
-COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Unity.exe
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.9f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
@@ -15,63 +15,583 @@ C:/Projects/Unity/trashEater
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58378
+51168
 Successfully changed project path to: C:/Projects/Unity/trashEater
 C:/Projects/Unity/trashEater
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 45.80 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 49.84 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2020.3.21f1 (a38c86f6690f)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Resources/UnitySubsystems
+Initialize engine version: 2020.3.9f1 (108be757e447)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Projects/Unity/trashEater/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
+    Renderer: NVIDIA GeForce GTX 1650 SUPER (ID=0x2187)
     Vendor:   
-    VRAM:     3965 MB
-    Driver:   27.20.100.9749
+    VRAM:     3955 MB
+    Driver:   30.0.14.7141
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56880
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56076
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.032111 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001280 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 57.28 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 39.23 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.883 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3884ms)
-		BeginReloadAssembly (58ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (0ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (585ms)
-			LoadAssemblies (56ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (134ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (282ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (57ms)
-				BeforeProcessingInitializeOnLoad (21ms)
-				ProcessInitializeOnLoadAttributes (146ms)
-				ProcessInitializeOnLoadMethodAttributes (52ms)
-				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (0ms)
+- Completed reload, in  1.002 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.150140 seconds.
+Registered in 0.003058 seconds.
 Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 38.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.014 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2194 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.9 MB.
+System memory in use after: 95.9 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2626.
+Total: 2.304400 ms (FindLiveObjects: 0.190800 ms CreateObjectMapping: 0.076900 ms MarkObjects: 1.944300 ms  DeleteObjects: 0.091900 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/Start plot.unity
+  artifactKey: Guid(aacd6d8f7eea2604783635cdb3cefd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Start plot.unity using Guid(aacd6d8f7eea2604783635cdb3cefd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c6286d6f8b797d65f232af1d230921') in 0.021307 seconds
+  Import took 0.024290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001852 seconds.
+  path: Assets/Scenes/Start plot.unity
+  artifactKey: Guid(aacd6d8f7eea2604783635cdb3cefd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Start plot.unity using Guid(aacd6d8f7eea2604783635cdb3cefd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c6286d6f8b797d65f232af1d230921') in 0.003031 seconds
+  Import took 0.005867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.127496 seconds.
+  path: Assets/Prefabs/UI/WinningPanel.prefab
+  artifactKey: Guid(583898a9fc0b5e4499b75147ed83fbae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/WinningPanel.prefab using Guid(583898a9fc0b5e4499b75147ed83fbae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8330456bd838048ece9e03c96d043155') in 0.048943 seconds
+  Import took 0.051963 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.029384 seconds.
+  path: Assets/Scenes/Level 1.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level 1.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '303d14d125bdda7e98db8942abe17e30') in 0.008079 seconds
+  Import took 0.011430 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002807 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.936 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2186 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.6 MB.
+System memory in use after: 95.6 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2628.
+Total: 2.420200 ms (FindLiveObjects: 0.182100 ms CreateObjectMapping: 0.064100 ms MarkObjects: 2.098000 ms  DeleteObjects: 0.075200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002846 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.934 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2186 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.6 MB.
+System memory in use after: 95.6 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2630.
+Total: 2.501300 ms (FindLiveObjects: 0.182200 ms CreateObjectMapping: 0.065200 ms MarkObjects: 2.178100 ms  DeleteObjects: 0.075000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002953 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.920 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2186 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.6 MB.
+System memory in use after: 95.6 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2632.
+Total: 2.199500 ms (FindLiveObjects: 0.166900 ms CreateObjectMapping: 0.067700 ms MarkObjects: 1.895400 ms  DeleteObjects: 0.068800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 244.813302 seconds.
+  path: Assets/Prefabs/UI/PauseMeny.prefab
+  artifactKey: Guid(dcfb3eafeda58ca43af0eeec65b60015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/PauseMeny.prefab using Guid(dcfb3eafeda58ca43af0eeec65b60015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd028800b142e003a500068405b8b4d1b') in 0.044143 seconds
+  Import took 0.047013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.862324 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9099545627e5649d21a0c520664cf8ed') in 0.009742 seconds
+  Import took 0.013442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.325825 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caed742276b0a8c32db5d44c62cf90ea') in 0.004706 seconds
+  Import took 0.007964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.315694 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95505f24b1953dad4f0fcc8b66765a35') in 0.005599 seconds
+  Import took 0.008667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.587142 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ef2387bd576f45832b84f9fcc0170de') in 0.004638 seconds
+  Import took 0.007705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.244785 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19d79bf9e13bdb98799de473679cee06') in 0.004800 seconds
+  Import took 0.008081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.890713 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d0b4f4931544b70fc9f40676bfcbb8e') in 0.005287 seconds
+  Import took 0.008611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.311927 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81bfc99c5dfbbfedd48592fad0fe57c5') in 0.005051 seconds
+  Import took 0.008606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.306506 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3a265f09f9d3fd7dd708eb10074dd16') in 0.004931 seconds
+  Import took 0.008202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.888609 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c6da39cba645840cb93032305ec2de0') in 0.004946 seconds
+  Import took 0.007964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.216204 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee19103448137f60e5c368319017f77e') in 0.004863 seconds
+  Import took 0.007999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.720826 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '056bb2755ce57ed2ef2ee91f9304b907') in 0.006020 seconds
+  Import took 0.009717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.313293 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2002959f756e08043c06a59b1457dd5') in 0.003956 seconds
+  Import took 0.007003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.076750 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b45030467b7906b7147749145e926e1f') in 0.004491 seconds
+  Import took 0.007742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.851219 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0446878f772078a0d5a16e3806aca233') in 0.005661 seconds
+  Import took 0.008711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.998697 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da6d1296f596a144a0ace5a843cf78a') in 0.003978 seconds
+  Import took 0.007164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.016115 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4225dc9a1b72297e52bf98cd4cd1000') in 0.003917 seconds
+  Import took 0.007027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.992871 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b26ee8758cace09e74b9deac62030c13') in 0.004064 seconds
+  Import took 0.007371 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.646609 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81ffecffb9097427c6e1dcf8ad72d3aa') in 0.003879 seconds
+  Import took 0.007119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.351534 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69001df2788a4c929a18086a67617331') in 0.004704 seconds
+  Import took 0.008019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.230555 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c302005e9e836ff7d1c3f8887ef4cc') in 0.003957 seconds
+  Import took 0.007052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.396757 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f9989967d044e92c4ab898e7182c5ff') in 0.004220 seconds
+  Import took 0.007371 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.430826 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94c9c4b43d5ce493d0650f0a1104eed2') in 0.004193 seconds
+  Import took 0.007296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 169.422294 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '260fbf7bcca2c2a8d876f5a12a3504d4') in 0.004622 seconds
+  Import took 0.007919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.827186 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61d0c909d349b31ce7699d07f83cd48b') in 0.004094 seconds
+  Import took 0.007219 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.561773 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5786521d8b83b3692b1eed8bd7034e79') in 0.004061 seconds
+  Import took 0.007216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 81.833683 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1cf2a996d017f7591bd14ff367f1ffe') in 0.004196 seconds
+  Import took 0.007284 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.677845 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '304d27c8a2a0f818d8e37364707ee8ae') in 0.004120 seconds
+  Import took 0.007320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.164095 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df8d16f9e9187a77c80bec26e568ec86') in 0.005045 seconds
+  Import took 0.008931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.096856 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7f88ac79c8b20834240478750ac794b') in 0.004061 seconds
+  Import took 0.007657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.022410 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9abfe4131cab3a67495fdf8fc4645bc5') in 0.004583 seconds
+  Import took 0.008288 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.038276 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cee4c5d74582bf31f56d452eb1cc429') in 0.004515 seconds
+  Import took 0.008320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.083705 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66ea98a865aa578be910e560db897dd9') in 0.006071 seconds
+  Import took 0.009729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.268519 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '735ebe267789d928495c87936ea25e5f') in 0.004304 seconds
+  Import took 0.007595 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002873 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.929 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2186 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.7 MB.
+System memory in use after: 95.7 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2636.
+Total: 2.129100 ms (FindLiveObjects: 0.197100 ms CreateObjectMapping: 0.073900 ms MarkObjects: 1.780400 ms  DeleteObjects: 0.076600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.178434 seconds.
+  path: Assets/Prefabs/UI/PauseMeny.prefab
+  artifactKey: Guid(dcfb3eafeda58ca43af0eeec65b60015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/PauseMeny.prefab using Guid(dcfb3eafeda58ca43af0eeec65b60015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '861854a9e0c5018e31b2d945ba11af43') in 0.041075 seconds
+  Import took 0.044041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.287925 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd476ae93e5706f4a0cf66dcf74de08c2') in 0.005847 seconds
+  Import took 0.009068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.965977 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aa46f7ce872f446739a6320712ecf6b') in 0.004376 seconds
+  Import took 0.007534 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002865 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.909 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2186 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.7 MB.
+System memory in use after: 95.8 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2638.
+Total: 2.139400 ms (FindLiveObjects: 0.168800 ms CreateObjectMapping: 0.066600 ms MarkObjects: 1.790600 ms  DeleteObjects: 0.112700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.752885 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32cdd9795a52c606378169879a534b69') in 0.034583 seconds
+  Import took 0.037480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.659788 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c94f6ae9b778f2e137a407f6b2ad440') in 0.005304 seconds
+  Import took 0.009123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 89.146300 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3af14f9296c26fb9b6d24b71967f968e') in 0.006032 seconds
+  Import took 0.010863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.530241 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '103b1919fd97232752badc087ad541ce') in 0.007009 seconds
+  Import took 0.011504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009099 seconds.
+  path: Assets/Prefabs/UI/GameOverPanel.prefab
+  artifactKey: Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameOverPanel.prefab using Guid(c710ddad48621034cb8831e816688271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '103b1919fd97232752badc087ad541ce') in 0.004749 seconds
+  Import took 0.007930 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002896 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.914 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2186 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.7 MB.
+System memory in use after: 95.8 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2640.
+Total: 2.307400 ms (FindLiveObjects: 0.173200 ms CreateObjectMapping: 0.062800 ms MarkObjects: 1.988600 ms  DeleteObjects: 0.081800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002890 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.947 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2186 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.7 MB.
+System memory in use after: 95.8 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2642.
+Total: 2.685000 ms (FindLiveObjects: 0.193100 ms CreateObjectMapping: 0.064800 ms MarkObjects: 2.349700 ms  DeleteObjects: 0.076500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003146 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.939 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2186 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.7 MB.
+System memory in use after: 95.8 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2644.
+Total: 2.080400 ms (FindLiveObjects: 0.167400 ms CreateObjectMapping: 0.062500 ms MarkObjects: 1.781200 ms  DeleteObjects: 0.068700 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

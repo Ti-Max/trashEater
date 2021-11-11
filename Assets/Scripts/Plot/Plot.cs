@@ -8,7 +8,7 @@ public class Plot : MonoBehaviour
 {
     public float timeBeforePlot = 10f;
     public GameObject massage;
-    public bool plotStarted = false;
+    public static bool plotStarted = false;
     float timer = 0;
     //massages
     string[] massages = 
@@ -23,11 +23,16 @@ public class Plot : MonoBehaviour
             timer += Time.deltaTime;
             if (timer > timeBeforePlot)
             {
-                plotStarted = true;
-                massage.SetActive(true);
-                massage.transform.GetChild(0).gameObject.GetComponent<Text>().text = massages[0];
+                StartPlot();
             }
         }
+    }
+    void StartPlot()
+    {
+        plotStarted = true;
+        massage.SetActive(true);
+        massage.transform.GetChild(0).gameObject.GetComponent<Text>().text = massages[0];
+        Time.timeScale = 0f;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -38,7 +43,6 @@ public class Plot : MonoBehaviour
     }
     public void NextMessage()
     {
-        Debug.Log("CLICK!");
         activeMassage++;
         if (activeMassage < massages.Length )
         {
@@ -46,6 +50,7 @@ public class Plot : MonoBehaviour
         }
         else//massages done
         {
+            Time.timeScale = 1f;
             SceneManager.LoadScene("Level 1");
         }
     }

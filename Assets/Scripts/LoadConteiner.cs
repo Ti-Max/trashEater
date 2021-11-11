@@ -13,7 +13,7 @@ public class LoadConteiner : MonoBehaviour
         {
             containerInventory += collision.gameObject.GetComponent<ShipInventory>().inventoryStorage;
 
-            //Ship starage
+            //Ship storage
             collision.gameObject.GetComponent<ShipInventory>().inventoryStorage = 0;
             scorePanel.text = containerInventory.ToString();
             collision.gameObject.GetComponent<ShipInventory>().ShipEnventoryPanel.text = "0";

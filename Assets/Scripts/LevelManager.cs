@@ -12,19 +12,37 @@ public class LevelManager : MonoBehaviour
 
     public GameObject GameOverPanel;
     public GameObject WinningPanel;
+    public GameObject PauseMenu;
     public Timer Timer;
-    
+    public bool isPaused;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!isPaused)
+            {
+                Pause();
+                PauseMenu.SetActive(true);
+            }
+            else
+            {
+                Resume();
+                PauseMenu.SetActive(false);
+            }
+
+        }
+    }
     public void Lose()
     {
         GameOverPanel.SetActive(true);
-        Destroy(GameObject.FindGameObjectWithTag("Player"));
+        Pause();
     }
     public void Win()
     {
         WinningPanel.SetActive(true);
-
+        Pause();
         //Counting stars
-        Timer.timerIsRunning = false;
         float usedTime = starsTime[0] - Timer.RemainingTime;
         if (usedTime < starsTime[1])
         {
@@ -34,13 +52,40 @@ public class LevelManager : MonoBehaviour
                 WinningPanel.transform.Find("Star3").GetComponent<Image>().color = Color.white;
             }
         }
-        Destroy(GameObject.FindGameObjectWithTag("Player"));
     }
     public void LoadLevel(int level)
     {
+        Resume();
         if (level > 0)
         {
             SceneManager.LoadScene(level - 1);
         }
+    }
+    public void LoadNextLevel()
+    {
+        Resume();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public void ReLoadScene()
+    {
+        Debug.Log("reload");
+        Resume();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    private void Pause()
+    {
+        isPaused = true;
+        Time.timeScale = 0f;
+    }
+    private void Resume()
+    {
+        isPaused = false;
+        Time.timeScale = 1f;
+    }
+    public void ResumeGame()
+    {
+        isPaused = false;
+        Time.timeScale = 1f;
+        PauseMenu.SetActive(false);
     }
 }

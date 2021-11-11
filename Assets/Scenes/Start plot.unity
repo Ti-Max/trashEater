@@ -220,7 +220,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.07004919, g: 0.3679245, b: 0, a: 1}
   m_FlipX: 0
@@ -348,7 +348,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.020600319, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -386,9 +386,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064673ba378412740ba2dbd3a13d5876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforePlot: 19.31
+  timeBeforePlot: 15.88
   massage: {fileID: 1142601484}
-  plotStarted: 0
 --- !u!1 &447745132
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,7 +988,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.07004919, g: 0.3679245, b: 0, a: 1}
   m_FlipX: 0
@@ -1206,7 +1205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d18598effc3ac74b898149250180b5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plot: {fileID: 354075598}
   prefab: {fileID: 4304229854036707271, guid: ec239009fd588d9449b6be7335c4b199, type: 3}
   spawnSpeed: 1.16
 --- !u!4 &2020102350
