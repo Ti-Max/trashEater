@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     //How much trash you need to collect to finish the level. ex. {30:00, 25:00, 20:00}
-    public float[] starsTime = new float[3];
+    public static float[] starsTime = new float[3];
+    public float[] InputStarsTime = new float[3];
+
     public int trashCount = 1;
 
     public GameObject GameOverPanel;
@@ -15,10 +17,15 @@ public class LevelManager : MonoBehaviour
     public GameObject PauseMenu;
     public Timer Timer;
     public bool isPaused;
+    bool gameOver = false;
+    private void Start()
+    {
+        starsTime = InputStarsTime;
+    }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !gameOver)
         {
             if (!isPaused)
             {
@@ -35,11 +42,13 @@ public class LevelManager : MonoBehaviour
     }
     public void Lose()
     {
+        gameOver = true;
         GameOverPanel.SetActive(true);
         Pause();
     }
     public void Win()
     {
+        gameOver = true;
         WinningPanel.SetActive(true);
         Pause();
         //Counting stars
@@ -68,7 +77,6 @@ public class LevelManager : MonoBehaviour
     }
     public void ReLoadScene()
     {
-        Debug.Log("reload");
         Resume();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

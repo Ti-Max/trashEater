@@ -1,36 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
     //in seconds
+    public Animator animator;
     public float RemainingTime;
     bool paused = false;
     void Start()
     {
-        RemainingTime = GameObject.Find("LevelManager").GetComponent<LevelManager>().starsTime[0];
+        System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
+        RemainingTime = LevelManager.starsTime[0];
         paused = false;
     }
     // Update is called once per frame
     void Update()
     {
-        //if (GameObject.Find("LevelManager").GetComponent<LevelManager>().isPaused)
+        RemainingTime -= Time.deltaTime;
+        if (RemainingTime >= 0f)
         {
-            RemainingTime -= Time.deltaTime;
-            if (RemainingTime >= 0f)
+            string timeString;
+            //9.95 here because string.Format rounds RemainingTime. 
+            if (RemainingTime < 9.95f)
             {
-                int minutes = Mathf.FloorToInt(RemainingTime / 60);
-                int seconds = Mathf.FloorToInt(RemainingTime % 60);
-                GetComponent<Text>().text = string.Format("{0:00}:{1:00}", minutes, seconds);
-                paused = false;
+                timeString =  string.Format("{0: 0.0}", RemainingTime);
+                animator.SetBool("timerImpuls", true);
             }
-            else if(!paused)
-            {//Run out of time 
-                paused = true;
-                GameObject.Find("LevelManager").GetComponent<LevelManager>().Lose();
+            else
+            {
+                timeString = string.Format("{0: 0}", RemainingTime);
             }
+            GetComponent<Text>().text = timeString;
+            paused = false;
+        }
+        else if(!paused)
+        {//Run out of time 
+            paused = true;
+            GameObject.Find("LevelManager").GetComponent<LevelManager>().Lose();
         }
 
     }
