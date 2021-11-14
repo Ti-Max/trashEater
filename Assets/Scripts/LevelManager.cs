@@ -13,6 +13,7 @@ public class LevelManager : MonoBehaviour
     public int trashCount = 1;
 
     public GameObject GameOverPanel;
+    public GameObject DeathMassage;
     public GameObject WinningPanel;
     public GameObject PauseMenu;
     public Timer Timer;
@@ -40,10 +41,11 @@ public class LevelManager : MonoBehaviour
 
         }
     }
-    public void Lose()
+    public void Lose(string deathMassage)
     {
         gameOver = true;
         GameOverPanel.SetActive(true);
+        DeathMassage.GetComponent<Text>().text = deathMassage;
         Pause();
     }
     public void Win()
@@ -52,11 +54,15 @@ public class LevelManager : MonoBehaviour
         WinningPanel.SetActive(true);
         Pause();
         //Counting stars
-        float usedTime = starsTime[0] - Timer.RemainingTime;
-        if (usedTime < starsTime[1])
+        float usedTime = InputStarsTime[0] - Timer.RemainingTime;
+        Debug.Log(Timer.RemainingTime);
+        Debug.Log(InputStarsTime[0]);
+        Debug.Log(InputStarsTime[1]);
+        Debug.Log(InputStarsTime[2]);
+        if (Timer.RemainingTime > InputStarsTime[2])
         {
             WinningPanel.transform.Find("Star2").GetComponent<Image>().color = Color.white;
-            if (usedTime < starsTime[2])
+            if (Timer.RemainingTime > InputStarsTime[1])
             {
                 WinningPanel.transform.Find("Star3").GetComponent<Image>().color = Color.white;
             }
@@ -72,8 +78,8 @@ public class LevelManager : MonoBehaviour
     }
     public void LoadNextLevel()
     {
-        Resume();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Resume();
     }
     public void ReLoadScene()
     {

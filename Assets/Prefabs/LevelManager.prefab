@@ -43,11 +43,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 147786cdd64a00f44a1b73b09b1bd620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starsTime:
-  - 30
-  - 25
-  - 20
-  trashCount: 7
+  InputStarsTime:
+  - 0
+  - 0
+  - 0
+  trashCount: 1
   GameOverPanel: {fileID: 0}
+  DeathMassage: {fileID: 0}
   WinningPanel: {fileID: 0}
+  PauseMenu: {fileID: 0}
   Timer: {fileID: 0}
+  isPaused: 0

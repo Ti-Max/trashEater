@@ -25,12 +25,12 @@ public class Timer : MonoBehaviour
             //9.95 here because string.Format rounds RemainingTime. 
             if (RemainingTime < 9.95f)
             {
-                timeString =  string.Format("{0: 0.0}", RemainingTime);
+                timeString =  string.Format("{0:0.0}", RemainingTime);
                 animator.SetBool("timerImpuls", true);
             }
             else
             {
-                timeString = string.Format("{0: 0}", RemainingTime);
+                timeString = string.Format("{0:0}", RemainingTime);
             }
             GetComponent<Text>().text = timeString;
             paused = false;
@@ -38,7 +38,7 @@ public class Timer : MonoBehaviour
         else if(!paused)
         {//Run out of time 
             paused = true;
-            GameObject.Find("LevelManager").GetComponent<LevelManager>().Lose();
+            GameObject.Find("LevelManager").GetComponent<LevelManager>().Lose("You have to be faster, trash wont wait.");
         }
 
     }

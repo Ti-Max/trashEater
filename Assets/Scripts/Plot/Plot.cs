@@ -7,14 +7,22 @@ using UnityEngine.UI;
 public class Plot : MonoBehaviour
 {
     public float timeBeforePlot = 10f;
+    public float timeBeforeSmoke = 2f;
     public GameObject massage;
+    public GameObject introductionMassage;
+    public GameObject introductionMassage2;
     public static bool plotStarted = false;
     float timer = 0;
     //massages
     string[] massages = 
         {"The Interceptor is broken!!!",
+        "Now trash will get to the ocean!!",
+         "All these little fish. They....",
+         "they can die.....",
          "Help us clear the river of garbage." };
     int activeMassage = 0;
+
+    bool smokeStarted = false;
     // Update is called once per frame
     void Update()
     {
@@ -24,6 +32,11 @@ public class Plot : MonoBehaviour
             if (timer > timeBeforePlot)
             {
                 StartPlot();
+            }
+            else if (timer > timeBeforeSmoke && !smokeStarted)
+            {
+                smokeStarted = true;
+                GetComponentInChildren<ParticleSystem>().Play();
             }
         }
     }
@@ -48,10 +61,30 @@ public class Plot : MonoBehaviour
         {
             massage.transform.GetChild(0).gameObject.GetComponent<Text>().text = massages[activeMassage];
         }
+        else if (activeMassage == massages.Length)
+        {
+            introductionMassage.SetActive(true);
+            massage.SetActive(false);
+        }
+        else if (activeMassage == massages.Length + 1)
+        {
+            GameObject.Find("IntroductionText").GetComponent<Text>().text = "He can eat 5 pieces of garbage at a time";
+            GameObject.Find("IntroductionText").transform.GetChild(0).GetComponent<Text>().text = "5";
+
+        }
+        else if (activeMassage == massages.Length + 2)
+        {
+            introductionMassage.SetActive(false);
+            introductionMassage2.SetActive(true);
+        }
+        else if (activeMassage == massages.Length + 3)
+        {
+            GameObject.Find("IntroductionText").GetComponent<Text>().text = "Then do it again until the river is clear";
+        }
         else//massages done
         {
-            Time.timeScale = 1f;
             SceneManager.LoadScene("Level 1");
+            Time.timeScale = 1f;
         }
     }
 }
