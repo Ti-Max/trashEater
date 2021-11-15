@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1064.8983, y: 524.9366}
+  m_AnchoredPosition: {x: 0, y: 8.4103}
+  m_SizeDelta: {x: 896.6929, y: 351.1244}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &415902372
 MonoBehaviour:
@@ -311,6 +311,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 858897844}
+  - {fileID: 2087495003}
   - {fileID: 1055574850}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -363,7 +364,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 415902371}
-  - {fileID: 2087495003}
   m_Father: {fileID: 550269107}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -502,7 +502,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1064.8983, y: 524.9366}
+  m_SizeDelta: {x: 568.1385, y: 222.429}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &947852145
 MonoBehaviour:
@@ -676,7 +676,7 @@ RectTransform:
   m_Children:
   - {fileID: 947852144}
   m_Father: {fileID: 550269107}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -813,7 +813,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1064.8983, y: 524.9366}
+  m_SizeDelta: {x: 823.8038, y: 297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1581694365
 MonoBehaviour:
@@ -903,12 +903,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1581694364}
-  m_Father: {fileID: 858897844}
+  m_Father: {fileID: 550269107}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -326}
+  m_AnchoredPosition: {x: 0, y: -43}
   m_SizeDelta: {x: 847.5128, y: 296.9951}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2087495004

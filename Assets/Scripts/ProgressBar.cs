@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class ProgressBar : MonoBehaviour
 {
+    LevelManager levelManager;
     public Slider slider;
     public Image fill;
     public Timer timer;
@@ -13,7 +14,8 @@ public class ProgressBar : MonoBehaviour
     private bool lostStar2 = false;
     private void Start()
     {
-        SetMaxValue(LevelManager.starsTime[0]);
+        levelManager = GameObject.FindObjectOfType<LevelManager>();
+        SetMaxValue(levelManager.InputStarsTime[0]);
     }
     public void SetMaxValue(float value)
     {
@@ -29,12 +31,12 @@ public class ProgressBar : MonoBehaviour
     {
         SetValue(timer.RemainingTime);
 
-        if (!lostStar3 && timer.RemainingTime < LevelManager.starsTime[1])
+        if (!lostStar3 && timer.RemainingTime < levelManager.InputStarsTime[1])
         {
             Star3.SetActive(false);
             lostStar3 = true;
         }
-        if (!lostStar2 && timer.RemainingTime < LevelManager.starsTime[2])
+        if (!lostStar2 && timer.RemainingTime < levelManager.InputStarsTime[2])
         {
             Star2.SetActive(false);
             lostStar2 = true;

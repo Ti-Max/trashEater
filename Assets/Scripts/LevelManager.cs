@@ -7,9 +7,8 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     //How much trash you need to collect to finish the level. ex. {30:00, 25:00, 20:00}
-    public static float[] starsTime = new float[3];
     public float[] InputStarsTime = new float[3];
-
+    public int LevelId;
     public int trashCount = 1;
 
     public GameObject GameOverPanel;
@@ -19,10 +18,6 @@ public class LevelManager : MonoBehaviour
     public Timer Timer;
     public bool isPaused;
     bool gameOver = false;
-    private void Start()
-    {
-        starsTime = InputStarsTime;
-    }
 
     private void Update()
     {
@@ -55,17 +50,28 @@ public class LevelManager : MonoBehaviour
         Pause();
         //Counting stars
         float usedTime = InputStarsTime[0] - Timer.RemainingTime;
-        Debug.Log(Timer.RemainingTime);
-        Debug.Log(InputStarsTime[0]);
-        Debug.Log(InputStarsTime[1]);
-        Debug.Log(InputStarsTime[2]);
+        int stars = 1;
         if (Timer.RemainingTime > InputStarsTime[2])
         {
+            stars++;
             WinningPanel.transform.Find("Star2").GetComponent<Image>().color = Color.white;
             if (Timer.RemainingTime > InputStarsTime[1])
             {
+                stars++;
                 WinningPanel.transform.Find("Star3").GetComponent<Image>().color = Color.white;
             }
+        }
+        //safe Progress
+        if (GameManager.progress[LevelId -1].bestTime > usedTime || GameManager.progress[LevelId - 1].bestTime == 0f)
+        {
+            GameManager.progress[LevelId - 1].bestTime = usedTime;
+            GameManager.progress[LevelId - 1].stars = stars;
+            GameManager.progress[LevelId].unlocked = true;
+            GameManager.SaveProgress();
+        }
+        else
+        {
+            Debug.Log("Not the best score!!");
         }
     }
     public void LoadLevel(int level)

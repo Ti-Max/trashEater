@@ -6,13 +6,15 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     //in seconds
+    LevelManager levelManager;
     public Animator animator;
     public float RemainingTime;
     bool paused = false;
     void Start()
     {
         System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
-        RemainingTime = LevelManager.starsTime[0];
+        levelManager = GameObject.FindObjectOfType<LevelManager>();
+        RemainingTime = levelManager.InputStarsTime[0];
         paused = false;
     }
     // Update is called once per frame
