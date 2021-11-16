@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Plot : MonoBehaviour
 {
+    public GameObject PauseMenu;
     public float timeBeforePlot = 10f;
     public float timeBeforeSmoke = 2f;
     public GameObject massage;
@@ -23,9 +24,21 @@ public class Plot : MonoBehaviour
     int activeMassage = 0;
 
     bool smokeStarted = false;
+    bool isPaused = false;
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape) && !plotStarted)
+        {
+            if (isPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
+        }
         if (!plotStarted)
         {
             timer += Time.deltaTime;
@@ -39,6 +52,28 @@ public class Plot : MonoBehaviour
                 GetComponentInChildren<ParticleSystem>().Play();
             }
         }
+    }
+    public void Pause()
+    {
+        PauseMenu.SetActive(true);
+
+        isPaused = true;
+        Time.timeScale = 0f;
+    }
+    public void Resume()
+    {
+                PauseMenu.SetActive(false);
+
+        isPaused = false;
+        Time.timeScale = 1f;
+    }
+    public void Reset()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void Menu()
+    {
+        SceneManager.LoadScene(0);
     }
     void StartPlot()
     {
@@ -83,6 +118,7 @@ public class Plot : MonoBehaviour
         }
         else//massages done
         {
+            GameManager.progress[1].unlocked = true;
             SceneManager.LoadScene("Level 1");
             Time.timeScale = 1f;
         }

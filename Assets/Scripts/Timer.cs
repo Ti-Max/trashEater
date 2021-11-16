@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    //in seconds
     LevelManager levelManager;
     public Animator animator;
+    //in seconds
     public float RemainingTime;
     bool paused = false;
     void Start()

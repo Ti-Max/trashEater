@@ -21,6 +21,7 @@ public class LevelManager : MonoBehaviour
 
     private void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Escape) && !gameOver)
         {
             if (!isPaused)
@@ -62,11 +63,14 @@ public class LevelManager : MonoBehaviour
             }
         }
         //safe Progress
-        if (GameManager.progress[LevelId -1].bestTime > usedTime || GameManager.progress[LevelId - 1].bestTime == 0f)
+        if (GameManager.progress[LevelId].bestTime > usedTime || GameManager.progress[LevelId].bestTime == 0f)
         {
-            GameManager.progress[LevelId - 1].bestTime = usedTime;
-            GameManager.progress[LevelId - 1].stars = stars;
-            GameManager.progress[LevelId].unlocked = true;
+            GameManager.progress[LevelId].bestTime = usedTime;
+            GameManager.progress[LevelId].stars = stars;
+            if (LevelId != 10)
+            {
+                GameManager.progress[LevelId+1].unlocked = true;
+            }
             GameManager.SaveProgress();
         }
         else
@@ -77,10 +81,7 @@ public class LevelManager : MonoBehaviour
     public void LoadLevel(int level)
     {
         Resume();
-        if (level > 0)
-        {
-            SceneManager.LoadScene(level - 1);
-        }
+        SceneManager.LoadScene(level);
     }
     public void LoadNextLevel()
     {
