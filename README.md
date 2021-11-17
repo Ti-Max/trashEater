@@ -2,7 +2,7 @@
 THE INTERCEPTOR aka trash eater
 
 # Installation
-To lunch the game simply open "INSTALL FILE/Trash Eater SetUp.exe" file
+To install the game go to Releases and download setup or zin file OR go source code/INSTALL FILE/Trash eater v1.1 Setup.exe
 # Code
 All the code that I (Timofei) wrote is in the "Assets/Scripts" folder
 # Versions
