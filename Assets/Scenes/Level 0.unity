@@ -220,7 +220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2661824957142024177, guid: dcfb3eafeda58ca43af0eeec65b60015, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.88238525
+      value: -0.8823242
       objectReference: {fileID: 0}
     - target: {fileID: 2661824957142024177, guid: dcfb3eafeda58ca43af0eeec65b60015, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7718,7 +7718,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d18598effc3ac74b898149250180b5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4304229854036707271, guid: ec239009fd588d9449b6be7335c4b199, type: 3}
+  prefabs:
+  - {fileID: 4304229854036707271, guid: 8909a11bb6fd51742b5ab2abca88b126, type: 3}
+  - {fileID: 4304229854036707271, guid: a4d105c9d36b64240b3e7ea912b1bdc3, type: 3}
+  - {fileID: 4304229854036707271, guid: adbb146f8b5643e45ac2133c0686a199, type: 3}
+  - {fileID: 4304229854036707271, guid: ec239009fd588d9449b6be7335c4b199, type: 3}
   spawnSpeed: 1.16
 --- !u!4 &2020102350
 Transform:

@@ -69,10 +69,10 @@
     <Compile Include="Assets\Scripts\Plot\TrashSpawn.cs" />
     <Compile Include="Assets\Scripts\ProgressData.cs" />
     <Compile Include="Assets\Scripts\TrashFloating.cs" />
+    <Compile Include="Assets\FullScreen.cs" />
     <Compile Include="Assets\Scripts\ShipMovement.cs" />
     <Compile Include="Assets\Scripts\ProgressBar.cs" />
     <Compile Include="Assets\Scripts\Obstacle.cs" />
-    <Compile Include="Assets\FullScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
