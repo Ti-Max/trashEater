@@ -7,6 +7,7 @@ public class ShipInventory : MonoBehaviour
     public int maxInventoryStorage = 5;
     public int inventoryStorage = 0;
     public GameObject InventoryFullMassage;
+    public AudioSource pickUpSound;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Trash"))
@@ -16,6 +17,7 @@ public class ShipInventory : MonoBehaviour
                 inventoryStorage++;
                 ShipEnventoryPanel.text = (inventoryStorage).ToString();
                 Destroy(collision.gameObject);
+                pickUpSound.Play();
             }
             else
             {
