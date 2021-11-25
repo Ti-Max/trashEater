@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
     public int LevelId;
     public int trashCount = 1;
 
+    public AudioSource winningSound;
     public GameObject GameOverPanel;
     public GameObject DeathMassage;
     public GameObject WinningPanel;
@@ -46,6 +47,7 @@ public class LevelManager : MonoBehaviour
     }
     public void Win()
     {
+        winningSound.Play();
         gameOver = true;
         WinningPanel.SetActive(true);
         Pause();
