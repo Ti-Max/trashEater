@@ -12,6 +12,8 @@ All the code that I (Timofei) wrote is in the "Assets/Scripts" folder
 
 1.1 - same version, but some textures are from Gustas(he just forgot to send me them on 16.11.21, so he did it next day)
 
+1.2 - added some textures and sounds
+
  <b>ENJOY
 
 <h6>
